@@ -1,1 +1,15 @@
-GITHUB COMMANDS:
+1. Download git and configure it:
+   - git config --global user.name
+   - git config --global user.email
+
+2. Creating first repo on gitHub:
+   - Create a repo on gitHub
+   - clone it : git clone repoURL
+
+3. Make changes and commit:
+   - Stage all changes: git add file OR git add .
+   - git commit -m"message for commit"
+   - Upload to gitHub: git push OR git push origin main
+
+4. Check the status of changes done and committed or not: git status
+
