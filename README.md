@@ -240,4 +240,50 @@ git stash drop stash@{0}
 
 ---
 
+## Viewing History & Diffs
+
+```bash
+# View commit history
+git log
+
+# Compact one-line log
+git log --oneline
+
+# Visual branch graph
+git log --oneline --graph --all
+
+# Show changes not yet staged
+git diff
+
+# Show changes staged but not committed
+git diff --staged
+
+# Show changes in a specific commit
+git show commit-hash
+
+# Show who changed each line in a file
+git blame filename.txt
+```
+
+---
+
+## File Management
+
+```bash
+# Delete a file and stage the deletion
+git rm filename.txt
+
+# Remove file from Git tracking only (keep it locally)
+git rm --cached filename.txt
+
+# Move or rename a file
+git mv old-name.txt new-name.txt
+
+# List all tracked files
+git ls-files
+```
+
+---
+
+
 > *This guide is a living document — updated as I learn new things.*
