@@ -285,5 +285,109 @@ git ls-files
 
 ---
 
+## Collaboration & Open Source
+
+### Workflow for Contributing to Open Source
+
+```bash
+# 1. Fork the repo on GitHub (click Fork button)
+
+# 2. Clone YOUR fork
+git clone https://github.com/your-username/repo-name.git
+
+# 3. Add the original repo as upstream
+git remote add upstream https://github.com/original-owner/repo-name.git
+
+# 4. Create a feature branch
+git checkout -b my-feature
+
+# 5. Make your changes, then stage and commit
+git add .
+git commit -m "Add my feature"
+
+# 6. Push your branch to YOUR fork
+git push origin my-feature
+
+# 7. Open a Pull Request on GitHub from your fork → original repo
+
+# 8. Keep your fork in sync with the original
+git fetch upstream
+git merge upstream/main
+```
+
+### Common Collaboration Commands
+
+```bash
+# See all open pull requests (via GitHub CLI)
+gh pr list
+
+# Checkout someone else's PR locally
+git fetch origin pull/ID/head:branch-name
+git checkout branch-name
+```
+
+---
+
+## Markdown Syntax
+
+### Headings
+```markdown
+# H1 - Biggest
+## H2
+### H3
+#### H4
+```
+
+### Text Formatting
+```markdown
+**bold**
+*italic*
+***bold and italic***
+~~strikethrough~~
+`inline code`
+```
+
+### Lists
+```markdown
+- Unordered item
+  - Nested item
+
+1. Ordered item
+2. Second item
+```
+
+### Code Blocks
+````markdown
+```bash
+git status
+```
+````
+
+### Links & Images
+```markdown
+[Link Text](https://url.com)
+![Alt Text](image-url.png)
+```
+
+### Tables
+```markdown
+| Header 1 | Header 2 |
+|----------|----------|
+| Cell 1   | Cell 2   |
+```
+
+### Other Elements
+```markdown
+> Blockquote
+
+---           (horizontal line)
+
+- [x] Done
+- [ ] Not done
+
+:rocket: :white_check_mark: :warning:
+```
+
+---
 
 > *This guide is a living document — updated as I learn new things.*
